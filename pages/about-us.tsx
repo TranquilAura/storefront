@@ -1,7 +1,7 @@
 import Page from '@/components/page'
 import Section from '@/components/section'
 
-const Story = () => (
+const AboutUs = () => (
 	<Page>
 		<Section>
 			<h2 className='text-xl font-semibold'>Story</h2>
@@ -26,4 +26,4 @@ const Story = () => (
 	</Page>
 )
 
-export default Story
+export default AboutUs

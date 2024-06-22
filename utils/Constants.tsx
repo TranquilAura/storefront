@@ -1,38 +1,4 @@
-import Link from 'next/link'
-import { useRouter } from 'next/router'
-
-const BottomNav = () => {
-	const router = useRouter()
-
-	return (
-		<div className='sm:hidden'>
-			<nav className='fixed bottom-0 w-full border-t bg-zinc-100 pb-safe dark:border-zinc-800 dark:bg-zinc-900'>
-				<div className='mx-auto flex h-16 max-w-md items-center justify-around px-6'>
-					{links.map(({ href, label, icon }) => (
-						<Link
-							key={label}
-							href={href}
-							className={`flex h-full w-full flex-col items-center justify-center space-y-1 ${
-								router.pathname === href
-									? 'text-indigo-500 dark:text-indigo-400'
-									: 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50'
-							}`}
-						>
-							{icon}
-							<span className='text-xs text-zinc-600 dark:text-zinc-400'>
-								{label}
-							</span>
-						</Link>
-					))}
-				</div>
-			</nav>
-		</div>
-	)
-}
-
-export default BottomNav
-
-const links = [
+export const links = [
 	{
 		label: 'Home',
 		href: '/',
@@ -52,8 +18,31 @@ const links = [
 		),
 	},
 	{
-		label: 'Story',
-		href: '/story',
+		label: 'Shop',
+		href: '/shop',
+		icon: (
+			<svg
+				className='w-6 h-6 text-gray-800 dark:text-white'
+				aria-hidden='true'
+				xmlns='http://www.w3.org/2000/svg'
+				width='24'
+				height='24'
+				fill='none'
+				viewBox='0 0 24 24'
+			>
+				<path
+					stroke='currentColor'
+					strokeLinecap='round'
+					strokeLinejoin='round'
+					strokeWidth='2'
+					d='M9 10V6a3 3 0 0 1 3-3v0a3 3 0 0 1 3 3v4m3-2 .917 11.923A1 1 0 0 1 17.92 21H6.08a1 1 0 0 1-.997-1.077L6 8h12Z'
+				/>
+			</svg>
+		),
+	},
+	{
+		label: 'About Us',
+		href: '/about-us',
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
@@ -70,8 +59,8 @@ const links = [
 		),
 	},
 	{
-		label: 'Recipes',
-		href: '/recipes',
+		label: 'Blog',
+		href: '/blogs',
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
