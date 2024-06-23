@@ -1,7 +1,17 @@
+export const pageRoutes = {
+	home: '/',
+	shop: '/shop',
+	aboutUs: '/about-us',
+	blog: '/blogs',
+	search: '/search',
+	profile: '/user',
+	cart: '/user/cart',
+}
+
 export const links = [
 	{
 		label: 'Home',
-		href: '/',
+		href: pageRoutes.home,
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
@@ -19,7 +29,7 @@ export const links = [
 	},
 	{
 		label: 'Shop',
-		href: '/shop',
+		href: pageRoutes.shop,
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
@@ -37,7 +47,7 @@ export const links = [
 	},
 	{
 		label: 'About Us',
-		href: '/about-us',
+		href: pageRoutes.aboutUs,
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
@@ -55,7 +65,7 @@ export const links = [
 	},
 	{
 		label: 'Blog',
-		href: '/blogs',
+		href: pageRoutes.blog,
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
