@@ -10,3 +10,11 @@ body {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
 }
+
+.reveal {
+	visibility: hidden;
+}
+
+.reveal.active {
+	animation: slidein 1.5s ease 2ms forwards;
+}

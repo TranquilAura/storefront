@@ -18,6 +18,12 @@ export default function Document() {
 				<meta name='theme-color' content='#f4f4f5' />
 				<link rel='apple-touch-icon' href='/images/icon-maskable-512.png' />
 				<link rel='manifest' href='/manifest.json' />
+				<link rel='preconnect' href='https://fonts.googleapis.com' />
+				<link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='anonymous' />
+				<link
+					href='https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Prata&display=swap'
+					rel='stylesheet'
+				/>
 			</Head>
 			<body>
 				<Main />
