@@ -6,12 +6,13 @@ import visaCardImg from '@/assets/images/visa.png'
 import masterCardImg from '@/assets/images/master-card.png'
 import paypalImg from '@/assets/images/paypal.png'
 import stripeImg from '@/assets/images/stripe.png'
+import Subheading from '../subHeading'
 
 function FooterComponent() {
 	return (
-		<footer>
+		<footer className='mt-5'>
 			<div className='max-w-screen-xl mx-auto px-6 flex flex-col w-full h-full items-center'>
-				<div className='grid sm:grid-cols-3 py-5 sm:space-y-0 space-y-7 sm:place-items-center'>
+				<div className='grid sm:grid-cols-3 py-5 sm:space-y-0 space-y-7 sm:place-items-center w-full'>
 					<div className='text-justify'>
 						<Link href={pageRoutes.home}>
 							<Image
@@ -20,12 +21,7 @@ function FooterComponent() {
 								alt='logo'
 							/>
 						</Link>
-						<div className='text-xs xl:text-sm text-light p-4 xl:leading-6'>
-							At JKS Olive Karate Academy, we offer authentic Japanese Karate
-							instruction for all ages. Our experienced sensei guide students in
-							mastering karate traditions, fostering discipline, focus, and
-							self-confidence.
-						</div>
+						<Subheading>{clientInfo.firm}</Subheading>
 					</div>
 					{/* <div className="text-center space-y-4">
                         <div className="text-lg font-semibold">
@@ -61,7 +57,7 @@ function FooterComponent() {
 							<Link href={pageRoutes.blog} className='text-sm'>
 								Blog
 							</Link>
-							<div className='flex items-center gap-2'>
+							{/* <div className='flex items-center gap-2'>
 								<Link
 									href={clientInfo.socialMediaLinks.facebook}
 									target='_blank'
@@ -103,7 +99,7 @@ function FooterComponent() {
 										<path d='M7.2 8.809H4V19.5h3.2V8.809Z' />
 									</svg>
 								</Link>
-							</div>
+							</div> */}
 							{/* <div className='text-center space-y-4'>
 								<div className='flex flex-col gap-2 text-gray-500 items-center text-center'>
 									<div className='flex items-center gap-2'>

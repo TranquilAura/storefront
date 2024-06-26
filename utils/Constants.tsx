@@ -26,6 +26,11 @@ export type ClientInfo = {
 	}
 }
 
+export type SummaryContent = {
+	title: string
+	content: string
+}
+
 export const pageRoutes = {
 	home: '/',
 	shop: '/shop',
@@ -94,7 +99,7 @@ export const links: NavLinkType[] = [
 	{
 		label: 'Blog',
 		href: pageRoutes.blog,
-		target: "_blank",
+		target: '_blank',
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
@@ -127,6 +132,29 @@ export const clientInfo: ClientInfo = {
 		instagram: 'https://www.instagram.com/',
 		linkedIn: 'https://www.linkedin.com/company/',
 		x: 'https://twitter.com/',
-		whatsapp: 'https://wa.me/+971503690484'
+		whatsapp: 'https://wa.me/+971503690484',
 	},
 }
+
+export const homeContent: SummaryContent[] = [
+	{
+		title: 'Explore Our Essence Collection',
+		content:
+			'Immerse yourself in the essence of elegance with our curated selection of attars sourced from the finest ingredients around the world. From delicate floral notes to rich woody blends, each fragrance is a masterpiece, carefully distilled to perfection.',
+	},
+	{
+		title: 'Craftsmanship Meets Tradition',
+		content:
+			'With a legacy rooted in centuries-old techniques, our attars are a testament to the artistry and dedication of skilled perfumers. Every bottle encapsulates the essence of time-honored craftsmanship, ensuring an unparalleled olfactory experience with each application.',
+	},
+	{
+		title: 'Experience the Difference',
+		content:
+			'Discover the difference of pure attar essence – a symphony of scent that lingers delicately on the skin, creating an aura of sophistication and allure. Elevate your senses and leave a lasting impression wherever you go with our signature blends',
+	},
+	{
+		title: 'Shop with Confidence',
+		content:
+			'Shop with confidence knowing that each bottle of attar is crafted with the utmost care and attention to detail. Our commitment to quality ensures that you receive only the finest products worthy of adorning your skin.',
+	},
+]
