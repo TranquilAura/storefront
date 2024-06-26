@@ -1,3 +1,31 @@
+import { StaticImageData } from 'next/image'
+import logo from '@/assets/images/logo.png'
+import { ReactElement } from 'react'
+
+export type NavLinkType = {
+	label: string
+	href: string
+	target?: '_blank' | '_self' | '_parent' | '_top'
+	icon: ReactElement<any, any>
+}
+
+export type ClientInfo = {
+	firm: string
+	contactNo: string
+	email: string
+	address: string
+	geoCoordinates: string
+	embedMap: string
+	logo: StaticImageData
+	socialMediaLinks: {
+		facebook: string
+		instagram: string
+		linkedIn: string
+		x: string
+		whatsapp: string
+	}
+}
+
 export const pageRoutes = {
 	home: '/',
 	shop: '/shop',
@@ -8,7 +36,7 @@ export const pageRoutes = {
 	cart: '/user/cart',
 }
 
-export const links = [
+export const links: NavLinkType[] = [
 	{
 		label: 'Home',
 		href: pageRoutes.home,
@@ -66,6 +94,7 @@ export const links = [
 	{
 		label: 'Blog',
 		href: pageRoutes.blog,
+		target: "_blank",
 		icon: (
 			<svg
 				viewBox='0 0 15 15'
@@ -82,3 +111,22 @@ export const links = [
 		),
 	},
 ]
+
+export const clientInfo: ClientInfo = {
+	firm: 'Tranquil Aura',
+	contactNo: '+971 50 369 0484',
+	email: 'info@tranquilaura.com',
+	address:
+		'New Muwailah, Al Maha Building - Office No. 108 - Muwaileh Commercial - Industrial Area - Sharjah',
+	geoCoordinates: 'https://maps.app.goo.gl/V3D75rNbusScCKxW6',
+	embedMap:
+		'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14427.571558540818!2d55.4606197!3d25.3078025!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5f68e794ace5%3A0x6ad666c577433ca7!2sJKS%20Olive%20Academy!5e0!3m2!1sen!2sae!4v1718363697617!5m2!1sen!2sae',
+	logo: logo,
+	socialMediaLinks: {
+		facebook: 'https://www.facebook.com/',
+		instagram: 'https://www.instagram.com/',
+		linkedIn: 'https://www.linkedin.com/company/',
+		x: 'https://twitter.com/',
+		whatsapp: 'https://wa.me/+971503690484'
+	},
+}

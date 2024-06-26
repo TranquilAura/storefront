@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '@/components/navbar/top-navbar/Navbar'
 import BottomNavbar from '@/components/navbar/bottom-navbar/BottomNavbar'
+import FooterComponent from './footer/FooterComponent'
 
 interface Props {
 	title?: string
@@ -26,7 +27,7 @@ const Page = ({ title, children }: Props) => (
 		>
 			<div className='p-6'>{children}</div>
 		</main>
-
+		<FooterComponent />
 		<BottomNavbar />
 	</>
 )

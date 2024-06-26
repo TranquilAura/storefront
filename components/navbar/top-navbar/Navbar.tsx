@@ -2,6 +2,8 @@ import SearchBar from '@/components/search-bar/SearchBar'
 import { links, pageRoutes } from '@/utils/Constants'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Image from 'next/image'
+import logo from '@/assets/images/logo.png'
 
 const Navbar = () => {
 	const router = useRouter()
@@ -11,7 +13,7 @@ const Navbar = () => {
 			<header className='border-b bg-zinc-100 px-safe dark:border-zinc-800 dark:bg-zinc-900'>
 				<div className='mx-auto flex h-20 max-w-screen-xl items-center justify-between px-6'>
 					<Link href='/'>
-						<h1 className='font-medium'>Tranquil Aura</h1>
+						<Image className='h-10 w-auto' alt='Tranquil Aura Logo' src={logo} />
 					</Link>
 
 					<nav className='flex items-center space-x-6'>
