@@ -119,7 +119,7 @@ export const links: NavLinkType[] = [
 
 export const clientInfo: ClientInfo = {
 	firm: 'Tranquil Aura',
-	contactNo: '+971 50 369 0484',
+	contactNo: '+971559183434',
 	email: 'info@tranquilaura.com',
 	address:
 		'New Muwailah, Al Maha Building - Office No. 108 - Muwaileh Commercial - Industrial Area - Sharjah',
@@ -132,7 +132,7 @@ export const clientInfo: ClientInfo = {
 		instagram: 'https://www.instagram.com/',
 		linkedIn: 'https://www.linkedin.com/company/',
 		x: 'https://twitter.com/',
-		whatsapp: 'https://wa.me/+971503690484',
+		whatsapp: 'https://wa.me/+971559183434',
 	},
 }
 

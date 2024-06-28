@@ -138,7 +138,7 @@ function FooterComponent() {
 							<Image className='h-14 w-14' src={stripeImg} alt='stripe Card' />
 						</div>
 						<div className='flex gap-2 justify-center md:justify-end'>
-							<Link href={clientInfo.socialMediaLinks.linkedIn} target='_blank'>
+							<Link href={clientInfo.socialMediaLinks.whatsapp} target='_blank'>
 								<svg
 									xmlns='http://www.w3.org/2000/svg'
 									x='0px'
