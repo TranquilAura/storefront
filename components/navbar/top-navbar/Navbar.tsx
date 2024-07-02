@@ -10,7 +10,7 @@ const Navbar = () => {
 
 	return (
 		<div className='fixed top-0 left-0 z-20 w-full bg-zinc-900 pt-safe'>
-			<header className='border-b bg-zinc-100 px-safe dark:border-zinc-800 dark:bg-zinc-900'>
+			<header className='border-b bg-zinc-100 px-safe'>
 				<div className='mx-auto flex h-20 max-w-screen-xl items-center justify-between px-6'>
 					<Link href='/'>
 						<Image className='h-10 w-auto' alt='Tranquil Aura Logo' src={logo} />
@@ -25,8 +25,8 @@ const Navbar = () => {
 										href={href}
 										className={`text-sm ${
 											router.pathname === href
-												? 'text-indigo-500 dark:text-indigo-400'
-												: 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50'
+												? 'text-indigo-500'
+												: 'text-zinc-600 hover:text-zinc-900'
 										}`}
 									>
 										{label}
@@ -41,8 +41,8 @@ const Navbar = () => {
 							href={pageRoutes.cart}
 							className={
 								router.pathname === pageRoutes.cart
-									? 'text-indigo-500 dark:text-indigo-400'
-									: 'text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50'
+									? 'text-indigo-500'
+									: 'text-zinc-600 hover:text-zinc-900'
 							}
 						>
 							<svg
@@ -61,7 +61,7 @@ const Navbar = () => {
 
 						<div
 							title='Gluten Free'
-							className='h-10 w-10 rounded-full bg-zinc-200 bg-cover bg-center shadow-inner dark:bg-zinc-800'
+							className='h-10 w-10 rounded-full bg-zinc-200 bg-cover bg-center shadow-inner'
 							style={{
 								backgroundImage:
 									'url(https://images.unsplash.com/photo-1612480797665-c96d261eae09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80)',
