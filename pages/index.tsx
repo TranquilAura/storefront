@@ -3,9 +3,16 @@ import Page from '@/components/page'
 import Section from '@/components/section'
 import Subheading from '@/components/subHeading'
 import { homeContent } from '@/utils/Constants'
+import Head from 'next/head'
 
 const Index = () => (
 	<>
+		<Head>
+			<title>OudTranquilAura | Home Page</title>
+			<meta name='title' content='OudTranquilAura | Home Page' />
+			<meta property='og:title' content='OudTranquilAura | Home Page' />
+			<meta property='twitter:title' content='OudTranquilAura | Home Page' />
+		</Head>
 		<BannerComponent />
 		<Page>
 			<div className='text-center'>

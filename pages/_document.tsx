@@ -5,8 +5,31 @@ export default function Document() {
 		<Html lang='en'>
 			<Head>
 				<meta charSet='utf-8' />
-				<link rel='icon' type='image/png' href='/images/favicon.png' />
+				<link rel='icon' href='/images/favicon.ico' />
+				{/* <!-- Primary Meta Tags --> */}
 				<meta
+					name='description'
+					content='Your Premier Destination for Oud Perfumes in UAE'
+				/>
+
+				{/* <!-- Open Graph / Facebook --> */}
+				<meta property='og:type' content='website' />
+				<meta property='og:url' content='https://ota-storefront.vercel.app/' />
+				<meta
+					property='og:description'
+					content='Your Premier Destination for Oud Perfumes in UAE'
+				/>
+				<meta property='og:image' content='/images/logo.png' />
+
+				{/* <!-- Twitter --> */}
+				<meta property='twitter:card' content='summary_large_image' />
+				<meta property='twitter:url' content='/images/logo.png' />
+				<meta
+					property='twitter:description'
+					content='Your Premier Destination for Oud Perfumes in UAE'
+				/>
+				<meta property='twitter:image' content='/images/logo.png' />
+				{/* <meta
 					name='viewport'
 					content='width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover'
 				/>
@@ -17,9 +40,13 @@ export default function Document() {
 				/>
 				<meta name='theme-color' content='#f4f4f5' />
 				<link rel='apple-touch-icon' href='/images/icon-maskable-512.png' />
-				<link rel='manifest' href='/manifest.json' />
+				<link rel='manifest' href='/manifest.json' /> */}
 				<link rel='preconnect' href='https://fonts.googleapis.com' />
-				<link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='anonymous' />
+				<link
+					rel='preconnect'
+					href='https://fonts.gstatic.com'
+					crossOrigin='anonymous'
+				/>
 				<link
 					href='https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Prata&display=swap'
 					rel='stylesheet'
